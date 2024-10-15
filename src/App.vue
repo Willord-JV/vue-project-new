@@ -2,7 +2,6 @@
 	<div id="app">
 		<div class="header">
 			<h1>My Vue App</h1>
-			<button id="theme-toggle">Toggle Light/Dark Mode</button>
 		</div>
 		<nav class="left-bar">
 			<ul>
