@@ -1,0 +1,222 @@
+@import "./base.css";
+
+#app {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	font-weight: normal;
+}
+
+a,
+.green {
+	text-decoration: none;
+	color: hsla(160, 100%, 37%, 1);
+	transition: background-color 0.4s ease;
+	padding: 3px;
+}
+
+@media (hover: hover) {
+	a:hover {
+		background-color: hsla(160, 100%, 37%, 0.2);
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		display: flex;
+		align-items: center;
+	}
+
+	#app {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 0 2rem;
+	}
+}
+
+input {
+	width: 100%;
+	padding: 8px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+button {
+	padding: 10px 15px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+button:focus {
+	outline: 2px solid #0056b3;
+}
+
+.left-bar {
+	width: 200px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	padding-top: 120px;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-bar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.left-bar li {
+	margin-bottom: 20px;
+}
+
+.left-bar a {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.left-bar a:hover {
+	color: #007bff;
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 80px;
+	background-color: #333;
+	color: #fff;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	padding: 15px 20px;
+	z-index: 3;
+}
+
+.main-content {
+	padding: 20px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav li {
+	margin-bottom: 10px;
+}
+
+nav a {
+	color: blue;
+	text-decoration: none;
+}
+
+nav a.disabled {
+	color: gray;
+	pointer-events: none;
+	text-decoration: none;
+}
+
+.ilove-arrays {
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.input-section {
+	margin-bottom: 20px;
+}
+
+.input-section input {
+	margin-right: 10px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.input-section button {
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+	background-color: #007bff;
+	color: white;
+	cursor: pointer;
+}
+
+.input-section button:hover {
+	background-color: #0056b3;
+}
+
+.results-section {
+	margin-top: 20px;
+}
+
+.results-section ul {
+	list-style: none;
+	padding: 0;
+}
+
+.results-section li {
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.dog-gallery {
+	text-align: center;
+	padding: 20px;
+}
+
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	margin-top: 20px;
+}
+
+.image-container {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.new-images-button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.new-images-button:hover {
+	background-color: #0056b3;
+}
+
+.new-images-button:focus {
+	outline: 2px solid #0056b3;
+}
